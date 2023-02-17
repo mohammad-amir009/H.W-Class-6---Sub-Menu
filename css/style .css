@@ -1,0 +1,108 @@
+/* common css starts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* common css ends */
+
+
+body {
+    background-image: linear-gradient(to left, #bdc3c7, #2c3e50);
+}
+
+div {
+    background-color: white;
+    width: 100%;
+}
+
+.second {
+    margin: right;
+    display: inline-block;
+
+    width: 800px;
+
+}
+
+.second img {
+    width: 300px;
+    margin-left: 700px;
+}
+
+
+
+/* nav starts  */
+
+nav {
+    background-color: #F85606;
+    font-family: arial;
+    display: block;
+
+}
+
+nav ul {
+    text-align: center;
+}
+
+
+nav ul li {
+
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 15px 50px;
+    color: white;
+    text-transform: capitalize;
+}
+
+nav ul li ul {
+    position: absolute;
+    background-color: #1F2121;
+    width: 200px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    margin-top: 15px;
+}
+
+nav ul li ul li {
+    display: block;
+}
+
+nav .submenu a {
+    border-bottom: .5px solid white;
+    display: block;
+    padding: 15px 35px;
+
+
+}
+
+nav ul li:hover>.submenu {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+}
+
+nav .submenu li:hover>a {
+    margin-left: 10px;
+}
+
+nav .submenu .submenu {
+    margin-left: 100%;
+    top: 0;
+}
+
+/* Nav ends */
